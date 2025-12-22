@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>3.5.8.1</version>
+    <version>4.0.1.0</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
@@ -36,7 +36,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <kotlin.version>1.9.25</kotlin.version>
+        <kotlin.version>2.2.21</kotlin.version>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -45,14 +45,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.version>3.5.8</spring-boot.version>
-        <spring-cloud.version>2025.0.0</spring-cloud.version>
+        <spring-boot.version>4.0.1</spring-boot.version>
+        <spring-cloud.version>2025.1.0</spring-cloud.version>
 
         <bamap-exception.version>1.0.4</bamap-exception.version>
-        <bamap-model.version>1.1.6</bamap-model.version>
-        <bamap-data-jpa.version>1.1.11</bamap-data-jpa.version>
+        <bamap-model.version>4.0.1</bamap-model.version>
+        <bamap-data-jpa.version>4.0.1.0</bamap-data-jpa.version>
         <bamap-util.version>1.0.5</bamap-util.version>
-        <bamap-keycloak.version>1.0.2</bamap-keycloak.version>
+        <bamap-keycloak.version>4.0.1.0</bamap-keycloak.version>
     </properties>
 
     <dependencyManagement>
@@ -91,7 +91,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.4.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -120,7 +120,7 @@
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.8.0</version>
+                <version>0.9.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
