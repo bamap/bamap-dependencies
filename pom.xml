@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>4.0.1.5</version>
+    <version>4.0.1.6</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
