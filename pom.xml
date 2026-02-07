@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>4.0.2.4</version>
+    <version>4.0.2.5</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
@@ -49,7 +49,7 @@
         <spring-cloud.version>2025.1.0</spring-cloud.version>
 
         <bamap-exception.version>1.0.4</bamap-exception.version>
-        <bamap-util.version>1.0.7</bamap-util.version>
+        <bamap-util.version>1.0.8</bamap-util.version>
         <bamap-model.version>5.0.0</bamap-model.version>
         <bamap-kt-mapper.version>1.0.1</bamap-kt-mapper.version>
         <bamap-data-jpa.version>4.0.2</bamap-data-jpa.version>
