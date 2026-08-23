@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>4.1.1.0</version>
+    <version>4.1.1.1</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
@@ -52,7 +52,7 @@
         <bamap-util.version>1.0.9</bamap-util.version>
         <bamap-model.version>5.0.2</bamap-model.version>
         <bamap-kt-mapper.version>1.0.2</bamap-kt-mapper.version>
-        <bamap-data-jpa.version>4.1.1</bamap-data-jpa.version>
+        <bamap-data-jpa.version>4.1.2</bamap-data-jpa.version>
         <bamap-adapter.version>4.3.2</bamap-adapter.version>
         <bamap-keycloak-adapter.version>4.2.0</bamap-keycloak-adapter.version>
     </properties>
