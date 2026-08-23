@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>4.1.0.0</version>
+    <version>4.1.1.0</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
@@ -45,15 +45,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.version>4.1.0</spring-boot.version>
+        <spring-boot.version>4.1.1</spring-boot.version>
         <spring-cloud.version>2025.1.2</spring-cloud.version>
 
         <bamap-exception.version>1.0.6</bamap-exception.version>
         <bamap-util.version>1.0.9</bamap-util.version>
-        <bamap-model.version>5.0.1</bamap-model.version>
+        <bamap-model.version>5.0.2</bamap-model.version>
         <bamap-kt-mapper.version>1.0.2</bamap-kt-mapper.version>
-        <bamap-data-jpa.version>4.1.0</bamap-data-jpa.version>
-        <bamap-adapter.version>4.3.1</bamap-adapter.version>
+        <bamap-data-jpa.version>4.1.1</bamap-data-jpa.version>
+        <bamap-adapter.version>4.3.2</bamap-adapter.version>
         <bamap-keycloak-adapter.version>4.2.0</bamap-keycloak-adapter.version>
     </properties>
 
