@@ -4,7 +4,7 @@
 
     <groupId>ir.bamap.blu</groupId>
     <artifactId>bamap-dependencies</artifactId>
-    <version>4.1.2.3</version>
+    <version>4.2.0.0</version>
 
     <packaging>pom</packaging>
     <name>Bamap Dependencies</name>
@@ -35,8 +35,8 @@
     <url>https://bamap.ir</url>
 
     <properties>
-        <java.version>21</java.version>
-        <kotlin.version>2.3.21</kotlin.version>
+        <java.version>17</java.version>
+        <kotlin.version>2.4.21</kotlin.version>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -45,19 +45,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.version>4.1.2</spring-boot.version>
-        <spring-cloud.version>2025.1.4</spring-cloud.version>
+        <spring-boot.version>4.2.1</spring-boot.version>
+        <spring-cloud.version>2026.0.0-SNAPSHOT</spring-cloud.version>
 
-        <bamap-exception.version>1.0.6</bamap-exception.version>
-        <bamap-util.version>1.0.9</bamap-util.version>
-        <bamap-model.version>5.0.3</bamap-model.version>
-        <bamap-log-annotation.version>1.2.2</bamap-log-annotation.version>
-        <bamap-execution-context-info.version>1.0.2</bamap-execution-context-info.version>
-        <bamap-log-common.version>1.0.2</bamap-log-common.version>
+        <bamap-exception.version>1.1.1</bamap-exception.version>
+        <bamap-util.version>1.1.1</bamap-util.version>
+        <bamap-model.version>5.1.0</bamap-model.version>
+        <bamap-log-annotation.version>1.4.0</bamap-log-annotation.version>
+        <bamap-execution-context-info.version>1.1.0</bamap-execution-context-info.version>
+        <bamap-log-common.version>1.2.1</bamap-log-common.version>
         <bamap-kt-mapper.version>1.0.2</bamap-kt-mapper.version>
-        <bamap-data-jpa.version>4.1.4</bamap-data-jpa.version>
-        <bamap-adapter.version>4.3.3</bamap-adapter.version>
-        <bamap-keycloak-adapter.version>4.2.1</bamap-keycloak-adapter.version>
+        <bamap-data-jpa.version>4.2.1</bamap-data-jpa.version>
+        <bamap-adapter.version>4.4.1</bamap-adapter.version>
+
+        <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
+        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
+        <central-publishing-maven-plugin.version>0.12.0</central-publishing-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -107,11 +110,6 @@
                 <artifactId>commons</artifactId>
                 <version>${bamap-adapter.version}</version>
             </dependency>
-            <dependency>
-                <groupId>ir.bamap.blu.adapter</groupId>
-                <artifactId>keycloak-adapter</artifactId>
-                <version>${bamap-keycloak-adapter.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -121,7 +119,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>${maven-source-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -135,7 +133,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.2.8</version>
+                <version>${maven-gpg-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -150,7 +148,7 @@
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.9.0</version>
+                <version>${central-publishing-maven-plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
